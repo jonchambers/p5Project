@@ -14,7 +14,7 @@ function setup() {
 
 function draw() {
   smooth();
-  //styles for the ellipse
+  //styles for the ellipse 
   noStroke();
   // put drawing code here to run in a loop
   ellipse(300, 500, 150, 150);
