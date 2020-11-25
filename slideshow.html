@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
 body {
   font-family: Arial;
@@ -47,7 +45,7 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-  background: purple;
+  background-color: purple;
 }
 
 /* Position the "next button" to the right */
@@ -100,18 +98,12 @@ img {
 .demo:hover {
   opacity: 1;
 }
-
-#mainContainer{
-  width: 400px;
-
-}
 </style>
-</head>
-
 <body>
 
-<div class="container">
 
+
+<div class="container">
 
 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -123,16 +115,16 @@ img {
 </div>
 
 <script>
-  //granb the main slideshow container
-  let slideShow = document.getElementsByClassName("container");
 
-  //go through a for loop that matches how many image you have in your folder
-  //then append the slide html for each image
-  for(let i =0; i<2; i++){
-    slideShow[0].innerHTML +=
-    '<div class="mySlides"><img src=images/' + i + '.png ></div>'
-  }
+//granb the main slideshow container
+let slideShow = document.getElementsByClassName("container");
 
+//go through a for loop that matches how many image you have in your folder
+//then append the slide html for each image
+for(let i =0; i<2; i++){
+  slideShow[0].innerHTML +=
+  '<div class="mySlides"><img src=images/' + i + '.png ></div>'
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -161,11 +153,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-
-
-
 </script>
 
 </body>
